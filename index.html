@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+
+header {
+  background: #111;
+  color: #fff;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-block: 1rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+nav a:hover {
+  opacity: 0.75;
+}
+
+.hero {
+  background: linear-gradient(135deg, #1f4037 0%, #99f2c8 100%);
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #fff;
+  color: #111;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #e5e5e5;
+}
+
+.features {
+  padding: 3rem 0;
+  background: #fff;
+}
+
+.features .container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.feature-box {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #fafafa;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.feature-box h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.feature-box p {
+  font-size: 1rem;
+  color: #555;
+}
+
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 0.5rem;
+  }
+
+  nav a {
+    margin: 0.5rem 1rem 0 0;
+  }
+}
+
+    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy Digital Bundles</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Buy Digital Bundles</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Get Premium Subscriptions at Lowest Prices!</h2>
+      <p>Netflix, Prime Video, YouTube Premium, Canva Pro & more starting at just ₹199/month</p>
+      <a href="products.html" class="btn">Browse Products</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <div class="feature-box">
+        <h3>🔥 Affordable Prices</h3>
+        <p>Unbeatable deals on top digital services.</p>
+      </div>
+      <div class="feature-box">
+        <h3>⚡ Instant Delivery</h3>
+        <p>Receive access details within minutes.</p>
+      </div>
+      <div class="feature-box">
+        <h3>✅ Trusted Service</h3>
+        <p>1000+ happy customers across India.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Buy Digital Bundles. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
