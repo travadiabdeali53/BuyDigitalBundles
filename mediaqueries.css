@@ -1,0 +1,134 @@
+/* @media screen and (max-width: 768px) { .nav-links { display: none; } #hamburger-nav { display: flex; justify-content: space-between; align-items: center; background: #003366; padding: 1rem 5%; color: white; } .topbar { flex-direction: column; text-align: center; } .header-actions { margin-top: 1rem; } #hamburger-nav .logo img { height: 35px; margin-right: 8px; vertical-align: middle; } #hamburger-nav .logo span { font-size: 1.2rem; font-weight: bold; color: white; } #home, #Products { padding: 3rem 5%; } #Products .products-container { flex-direction: column; align-items: center; } .about-container { flex-direction: column; text-align: center; } .about-image { margin-top: 2rem; } } @media screen and (max-width: 1200px) { #desktop-nav { display: none; } #hamburger-nav { display: flex; } } /* 📱 Mobile & Tablet Responsive Styles */ /* Tablets & smaller desktops (max-width: 1200px) */
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #003366;
+    padding: 1rem 5%;
+    color: white;
+  }
+} /* Tablets (max-width: 992px) */
+@media screen and (max-width: 992px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+  .hero p {
+    font-size: 0.95rem;
+  }
+  #products .products-container {
+    gap: 1.5rem;
+  }
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-image {
+    margin-top: 2rem;
+  }
+  .contact-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    width: 100%;
+  }
+} /* Mobile (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .hero {
+    padding: 3rem 1.5rem;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero h2 {
+    font-size: 1rem;
+  }
+  .hero p {
+    font-size: 0.9rem;
+  }
+  #home,
+  #products,
+  #about,
+  #contact {
+    padding: 3rem 5%;
+  }
+  #products .products-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #products .product-card {
+    width: 100%;
+    max-width: 90%;
+  }
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: -4rem;
+  }
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  } /* .header-actions { flex-direction: column; gap: 0.8rem; } .header-actions a { margin-left: 0; width: 100%; text-align: center; } */
+  .button-container {
+    flex-direction: column; /* Stack vertically */
+    align-items: center; /* Center each button */
+  }
+  .button-container .btn {
+    width: 80%; /* Make buttons wide on mobile */
+  }
+  .footer-middle ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+} /* Small Mobile (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .hero h2 {
+    font-size: 0.9rem;
+  }
+  .hero p {
+    font-size: 0.85rem;
+  }
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.2rem;
+  }
+  #products h2 {
+    font-size: 1.5rem;
+  }
+  .about-text h2,
+  .contact-title {
+    font-size: 1.6rem;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+  }
+  .contact-form button {
+    font-size: 0.95rem;
+    padding: 0.8rem;
+  }
+  .footer-left h2 {
+    font-size: 20px;
+  }
+}
